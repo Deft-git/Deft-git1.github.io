@@ -1,0 +1,317 @@
+ var xlist = eval([
+
+/**************************************************************************************************
+*                                       Sexual Input                                               *
+***************************************************************************************************/
+    {"img":"","question":"请选择你的性别","answer":
+    {"a":{"title":"男","weight":"0","img":""},
+    "b":{"title":"女","weight":"1","img":""}},"right":"2","weight":"1","kkimg":""},
+/**************************************************************************************************
+*                                       BSCI-自尊                                                  *
+**************************************************************************************************/
+    {"img":"","question":"我对待工作或者学习十分的努力？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"在生活中我表现的特别坚强？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我对自己的表现特别满意，很喜欢现在的自己？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"周围的人都喜欢与我相处在一起？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"在生活或者学习中，我的表现和其他人一样出色？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"在生活或者学习中，我感觉一切正常或者如我所愿？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"在生活中，我是一个表现很好的人？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"在生活和学习中，我做的很好？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"面对新的任务，我可以独立完成而不需要别人的帮助？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我感觉自己很聪明？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"周围的人都认为我很有能力？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我对周围的人都很友善？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我认为自己是一个很不错的人？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我很擅长讲笑话，很幽默？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我的记性很好？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我从不撒谎？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我为自己所做的事情感到自豪？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我是一个好的思考者？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我喜欢并爱惜自己的身体？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我很开心做自己？","answer":
+    {"a":{"title":"从不没有","weight":"6","img":""},
+    "b":{"title":"偶尔会有","weight":"7","img":""},
+    "c":{"title":"经常出现","weight":"8","img":""},
+    "d":{"title":"一直如此","weight":"9","img":""}},"right":"2","weight":"1","kkimg":""},
+/**************************************************************************************************
+*                                       BAI-焦虑                                                  *
+**************************************************************************************************/
+    {"img":"","question":"外出时我担心可能有人会伤害我","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我会被自己做的噩梦吓到","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"在工作或者学习中，我会忧虑","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我会想到一些可怕的事情","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我担心别人会取笑我","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我害怕自己会犯错","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我会很紧张","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我害怕自己会受伤害","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我十分担心自己业绩或者成绩变差","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我对未来很忧虑","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我的手会忍不住颤抖","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我担心自己会发疯","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我担心别人会生我的气","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我担心自己会无法控制自己","answer":
+    {"a":{"title":"从不没有","weight":"12","img":""},
+    "b":{"title":"偶尔会有","weight":"13","img":""},
+    "c":{"title":"经常出现","weight":"14","img":""},
+    "d":{"title":"一直如此","weight":"15","img":""}},"right":"2","weight":"1","kkimg":""},
+/**************************************************************************************************
+*                                       BDI-抑郁                                                  *
+**************************************************************************************************/
+    {"img":"","question":"我觉得自己的生活一团乱麻","answer":
+    {"a":{"title":"从不没有","weight":"18","img":""},
+    "b":{"title":"偶尔会有","weight":"19","img":""},
+    "c":{"title":"经常出现","weight":"20","img":""},
+    "d":{"title":"一直如此","weight":"21","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"工作或者学习中，我会遇到麻烦","answer":
+    {"a":{"title":"从不没有","weight":"18","img":""},
+    "b":{"title":"偶尔会有","weight":"19","img":""},
+    "c":{"title":"经常出现","weight":"20","img":""},
+    "d":{"title":"一直如此","weight":"21","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我感觉自己是个坏人","answer":
+    {"a":{"title":"从不没有","weight":"18","img":""},
+    "b":{"title":"偶尔会有","weight":"19","img":""},
+    "c":{"title":"经常出现","weight":"20","img":""},
+    "d":{"title":"一直如此","weight":"21","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我希望自己已经死了","answer":
+    {"a":{"title":"从不没有","weight":"18","img":""},
+    "b":{"title":"偶尔会有","weight":"19","img":""},
+    "c":{"title":"经常出现","weight":"20","img":""},
+    "d":{"title":"一直如此","weight":"21","img":""}},"right":"2","weight":"1","kkimg":""},
+
+/**************************************************************************************************
+*                                          BANI-愤怒                                              *
+**************************************************************************************************/
+    {"img":"","question":"我认为周围的人们试图欺骗我","answer":
+    {"a":{"title":"从不没有","weight":"24","img":""},
+    "b":{"title":"偶尔会有","weight":"25","img":""},
+    "c":{"title":"经常出现","weight":"26","img":""},
+    "d":{"title":"一直如此","weight":"27","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我想大声尖叫、嘶吼","answer":
+    {"a":{"title":"从不没有","weight":"24","img":""},
+    "b":{"title":"偶尔会有","weight":"25","img":""},
+    "c":{"title":"经常出现","weight":"26","img":""},
+    "d":{"title":"一直如此","weight":"27","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我认为周围的人对我不公平","answer":
+    {"a":{"title":"从不没有","weight":"24","img":""},
+    "b":{"title":"偶尔会有","weight":"25","img":""},
+    "c":{"title":"经常出现","weight":"26","img":""},
+    "d":{"title":"一直如此","weight":"27","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我认为周围的人试图伤害我","answer":
+    {"a":{"title":"从不没有","weight":"24","img":""},
+    "b":{"title":"偶尔会有","weight":"25","img":""},
+    "c":{"title":"经常出现","weight":"26","img":""},
+    "d":{"title":"一直如此","weight":"27","img":""}},"right":"2","weight":"1","kkimg":""},
+
+/**************************************************************************************************
+*                                          BDBI-失控                                              *
+**************************************************************************************************/
+    {"img":"","question":"我会不劳而获，或者偷过东西","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"别人会使我陷入困境","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我想逃避","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我做事缺乏正义感","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"未经许可，我会闯入他人房间、办公室或者其它地方","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+    {"img":"","question":"我和别人有过冲突","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+        {"img":"","question":"我喜欢惹怒别人","answer":
+    {"a":{"title":"从不没有","weight":"30","img":""},
+    "b":{"title":"偶尔会有","weight":"31","img":""},
+    "c":{"title":"经常出现","weight":"32","img":""},
+    "d":{"title":"一直如此","weight":"33","img":""}},"right":"2","weight":"1","kkimg":""},
+
+
+    ]);

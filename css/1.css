@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    height: 100vh;	/* 重点一 */
+    margin: 0 auto;
+     background-image: url(./3.png);
+     background-size:100% 100%;
+  
+ 
+ 
+    
+}
+ 
+#head{
+    height: 100%; 
+    /* 高度100%的实现,是依据父元素的高度大小进行实现的,所以这里给html,body设置
+    了100%,此时,head高度100%才会有效果. */
+    width: 100%;
+    
+  
+    
+}
+#middle{
+ background-color:white;
+ width: 350px;
+ height: 300px;
+ position: relative;
+top: 25%;
+left: 60%;
+}
+#form2{
+   
+    margin-left: 30px;
+    display: block;
+    
+ 
+}
+#form1{
+    margin-left: 30px;
+    display: none;
+ 
+}
+form>p{
+    font-size: 10px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+form>input{
+border: 1px solid #ccc;
+height: 42px;
+outline: none;
+font-size: 15px;
+padding-left: 50px;   
+width: 75%;
+ 
+ 
+}
+#ATM{
+   height: 18px;
+  padding-left: 30px;
+   font-size: 16px;
+   color: #3c3c3c;
+   margin: 9px 10px 0 0;
+   font-weight: 700;
+   margin-bottom: 40px;
+   padding-top: 29px;
+}
+#button{
+    width: 90%;
+    height: 40px;
+    background-color: #ff0036;
+    margin-top: 15px;
+    border: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    border-radius: 8px;
+ 
+}
+#footer>span{
+    color: #6c6c6c;
+    
+    font-size: 12px;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+/* 
+注册表单样式 */
+ 
+#button1{
+    width: 90%;
+    height: 40px;
+    background-color: #ff0036;
+    margin-top: 15px;
+    border: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    border-radius: 8px;
+ 
+}
+#ATM>button{
+    background-color: #ffffff;
+    border-radius: 7px;
+    font-weight: 900;
+    border: 0px;
+    color: rgb(87, 85, 81);
+    width: 70px;
+    
+ 
+ 
+}
+#ATM>button:hover{
+    background-color: #000000;
+    color: wheat;
+}

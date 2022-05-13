@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+        #progress-lable{
+            position: relative;
+            width:100%;
+            left:0%;
+            text-align:left ;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+        .progress{
+            width:100%;
+            height:20px ;
+            margin-top:5px;
+            margin-left:  0px;
+            margin-right:  0px;
+            background: #F5F5F5;
+        }
+        #precent{
+            background: #DCDCDC;
+            width: 10%;
+            height: 100%;
+        }
+        
+        .question-only{
+        	text-align: left;
+            width:100%;
+            margin: 0px 0px;
+        } 
+        .question-pic{
+        	
+        	width:100%;
+        	margin:  0px 0px;
+            text-align:left ;
+        }

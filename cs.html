@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-cn"
+    data-useragent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+    data-localdate="2022-4-2" class="ng-scope">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        [uib-typeahead-popup].dropdown-menu {
+            display: block;
+        }
+    </style>
+    <style type="text/css">
+        .uib-time input {
+            width: 50px;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker .uib-title {
+            width: 100%;
+        }
+
+        .uib-day button,
+        .uib-month button,
+        .uib-year button {
+            min-width: 100%;
+        }
+
+        .uib-datepicker-popup.dropdown-menu {
+            display: block;
+        }
+
+        .uib-button-bar {
+            padding: 10px 9px 2px;
+        }
+    </style>
+    <style type="text/css">
+        .ng-animate.item:not(.left):not(.right) {
+            -webkit-transition: 0s ease-in-out left;
+            transition: 0s ease-in-out left
+        }
+    </style>
+    <style type="text/css">
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta id="metaDescription" name="description" content="">
+    <meta itemprop="name" content="网页界面设计">
+    <meta itemprop="image"
+        content="https://img.xiumi.us/xmi/ua/2clQh/i/a1eb0e6e2b011c4a7d7127fcbaef9aaa-sz_86465.jpg?x-oss-process=style/xm">
+    <meta name="description" itemprop="description" content="">
+    <script>
+        (function (window, document, navigator) {
+            var doc = document.documentElement;
+            doc.setAttribute('data-useragent', navigator.userAgent)
+        })(window, window.document, window.navigator);
+    </script>
+    <script>
+        (function (window, document, navigator) {
+            var doc = document.documentElement;
+            var d = new Date();
+            var localDateTxt = '' + d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+            doc.setAttribute('data-localdate', localDateTxt);
+        })(window, window.document, window.navigator);
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>大学生心理健康测评</title>
+    <link rel="stylesheet" href="./design1_files/b9326d.paper.min.css">
+    <link rel="stylesheet" href="./images/common.css">
+    <style>
+	/* 小标题css */
+        .t-btn1 {
+            color: #aa0000;
+            background: rgba(94, 48, 117, 0);
+            background-position: center center;
+            background-size: contain;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .t-s::after {
+            position: absolute;
+            right: 5px;
+            top: 0;
+            padding: 4px;
+            background: rgba(255, 255, 255, 0);
+            content: url("#");
+            display: none;
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+        }
+
+        .animation-breath {
+            -webkit-animation: breath 1s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes breath {
+            0% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.4;
+            }
+        }
+
+        #preload {
+            display: none;
+        }
+
+        #result-bnt {
+            display: none;
+        }
+
+        .boxes {
+            font-size: 0px;
+            color: #FFF;
+        }
+
+        .NavTop {
+            width: 140px;
+            height: 270px;
+            margin-top: -150px;
+            position: fixed;
+            right: 0px;
+            top: 200px;
+            /*固定位置,右浮动，距上150px*/
+        }
+
+        .ad_bottom {
+            text-align: center;
+            left: 0px;
+            right: 0px;
+            bottom: 0;
+            position: fixed;
+            z-index: 999;
+        }
+
+        #ifr {
+            height: 150px !important;
+        }
+
+        #spn {
+            height: 50px !important;
+        }
+
+        #botBoxClose {
+            z-index: 20000;
+            top: -20px;
+        }
+
+        #botBoxClose {
+            position: absolute;
+            text-align: center;
+            right: 0px;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            line-height: 18px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 16px;
+            font-family: arial;
+            cursor: pointer;
+        }
+
+        .submit {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 30px);
+            width: 100px;
+            height: 40px;
+
+
+        }
+
+        .scoreBox {
+            width: 400px;
+            height: 400px;
+            display: none;
+            background-color: #ccc;
+            margin: 30px auto;
+            text-align: center;
+            position: relative;
+        }
+        .scoreOuter{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body class="tn-transition-end tn-platform-class tn-platform-desktop light-mode" ng-class="getColorScheme()">
+	<div> 
+    <div id="shareImage" style="display: none;">
+        <img src="./img/fj.jpg">
+    </div>
+    <div class="tn-reader-paper container ng-scope" ng-controller="PaperReaderController"
+        tn-scroll-touch="onPaperScroll($event)" tn-scroll-touch-for="document">
+        <section class="row tn-board-head-space ng-hide" ng-show="!displaySystemTitle" style=""></section>
+        <div class="loading-progress ng-hide" ng-show="!isReady" style="">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <section class="row tn-article-body" tn-opera-house="{ gesture: false }"
+            tn-atom-context="{ type: &#39;paper&#39;, inReader: true, animationEnabled: false }">
+            <article
+                class="tn-cube-box paper dock-loader atom-data-binding ng-scope tn-comp-anim-pin tn-comp-inst tn-cube-box-inst tn-comp tn-in-cell-state-active tn-from-house-reader_booklet-cp"
+                ng-show="!htmlForPreview" tn-bind-comp-tpl-id="reader_booklet-cp:sys/loader-cubes-box"
+                tn-comp-role="cube-box" tn-comp="box" tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose"
+                tn-uuid="" tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)" opera-tn-ra-comp="box"
+                style="">
+                <!-- ngInclude: compTemplatePath -->
+                <section class="tn-comp-pin tn-comp-style-pin ng-scope" ng-include="compTemplatePath"
+                    tn-link="compAttr.link || comp.link" tn-sound="compAttr.sound"
+                    ng-style="compAttr.style | optimizeImageType" tn-pre-load-image="compAttr.style.backgroundImage"
+                    style="">
+                    <div class="tn-cube-slot tn-view-cubes ng-scope tn-cell-inst tn-cell tn-cell-group tn-child-position-absolute tn-state-active tn-cube-flipper-box"
+                        tn-cell-type="group" tn-cell="cubes" tn-link="cell.link"
+                        ng-style="cell.style | optimizeImageType"
+                        tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)" tn-animate-on-self="true"
+                        tn-sound="cell.sound" ng-class="{ &#39;group-empty&#39;: !(cellGroupItems.length) }"
+                        opera-tn-ra-cell="box.cubes">
+                        <!-- ngRepeat: chd in cellGroupItems track by $index -->
+                        <div class="tn-surface tn-cube tn-show-cube ng-scope tn-comp-anim-pin tn-comp-inst tn-cube-inst tn-comp tn-in-cell-state-active tn-from-house-reader_booklet-cp on-screen"
+                            tn-comp-role="cube" tn-bind-comp-tpl-id="reader_booklet-cp:sys/cube-fs"
+                            ng-repeat="chd in cellGroupItems track by $index" tn-comp="chd"
+                            tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose" tn-uuid=""
+                            tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)" tn-comp-index="0"
+                            opera-tn-ra-comp="box.cubes:0" style="">
+                            <!-- ngInclude: compTemplatePath -->
+                            <section class="tn-comp-pin tn-comp-style-pin ng-scope" ng-include="compTemplatePath"
+                                tn-link="compAttr.link || comp.link" tn-sound="compAttr.sound"
+                                ng-style="compAttr.style | optimizeImageType"
+                                tn-pre-load-image="compAttr.style.backgroundImage" style="">
+                                <div class="dock booklet tn-ground-slot tn-view-grounds ng-scope tn-cell-inst tn-cell tn-cell-group tn-child-position-absolute tn-state-active tn-vertical-flipper-box"
+                                    tn-cell-type="group" tn-bind-cell="grounds" tn-cell="grounds" tn-link="cell.link"
+                                    ng-style="cell.style | optimizeImageType"
+                                    tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)"
+                                    tn-animate-on-self="true" tn-sound="cell.sound"
+                                    ng-class="{ &#39;group-empty&#39;: !(cellGroupItems.length) }"
+                                    opera-tn-ra-cell="box.cubes:0.grounds">
+                                    <!-- ngRepeat: chd in cellGroupItems track by $index -->
+                                    <div class="tn-surface tn-ground tn-show-ground ng-scope tn-comp-anim-pin tn-comp-inst tn-ground-inst tn-comp tn-in-cell-state-active tn-comp-mode-board tn-from-house-reader_booklet-cp on-screen"
+                                        tn-comp-role="ground" tn-bind-comp-tpl-id="reader_booklet-cp:sys/pg-fs"
+                                        ng-repeat="chd in cellGroupItems track by $index" tn-comp="chd"
+                                        tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose" tn-uuid=""
+                                        tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)"
+                                        tn-comp-index="0" opera-tn-ra-comp="box.cubes:0.grounds:0" style="">
+                                        <!-- ngInclude: compTemplatePath -->
+                                        <section class="tn-comp-pin tn-comp-style-pin ng-scope"
+                                            ng-include="compTemplatePath" tn-link="compAttr.link || comp.link"
+                                            tn-sound="compAttr.sound" ng-style="compAttr.style | optimizeImageType"
+                                            tn-pre-load-image="compAttr.style.backgroundImage" style="">
+                                            <div class="tn-layer-slot ng-scope tn-cell-inst tn-cell tn-cell-group tn-child-position-absolute tn-state-active"
+                                                tn-cell-type="group" tn-bind-cell="layers" tn-cell="layers"
+                                                tn-link="cell.link" ng-style="cell.style | optimizeImageType"
+                                                tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)"
+                                                tn-animate-on-self="true" tn-sound="cell.sound"
+                                                ng-class="{ &#39;group-empty&#39;: !(cellGroupItems.length) }"
+                                                opera-tn-ra-cell="box.cubes:0.grounds:0.layers">
+                                                <!-- ngRepeat: chd in cellGroupItems track by $index -->
+                                                <div class="tn-layer ng-scope tn-comp-anim-pin tn-comp-inst tn-layer-inst tn-comp tn-in-cell-state-active tn-from-house-reader_booklet-cp"
+                                                    tn-comp-role="layer"
+                                                    tn-bind-comp-tpl-id="reader_booklet-cp:sys/ly-fs"
+                                                    ng-repeat="chd in cellGroupItems track by $index" tn-comp="chd"
+                                                    tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose"
+                                                    tn-uuid=""
+                                                    tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)"
+                                                    tn-comp-index="0" opera-tn-ra-comp="box.cubes:0.grounds:0.layers:0"
+                                                    style="">
+                                                    <!-- ngInclude: compTemplatePath -->
+                                                    <section class="tn-comp-pin tn-comp-style-pin ng-scope"
+                                                        ng-include="compTemplatePath"
+                                                        tn-link="compAttr.link || comp.link" tn-sound="compAttr.sound"
+                                                        ng-style="compAttr.style | optimizeImageType"
+                                                        tn-pre-load-image="compAttr.style.backgroundImage" style="">
+                                                        <div class="tn-comp-slot tn-cell tn-cell-group tn-child-position-absolute group-empty tn-state-active ng-scope"
+                                                            tn-cell-type="group" tn-link="cell.link"
+                                                            tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)"
+                                                            tn-animate-on-self="true" tn-sound="cell.sound"
+                                                            tn-ra-wrapper-cell=""
+                                                            tn-ra-cell="box.cubes:0.grounds:0.layers:0.comps"> </div>
+                                                    </section>
+                                                </div><!-- end ngRepeat: chd in cellGroupItems track by $index -->
+                                            </div>
+                                        </section>
+                                    </div><!-- end ngRepeat: chd in cellGroupItems track by $index -->
+                                </div>
+                                <div class="dock booklet tn-page-slot tn-view-pages ng-scope tn-cell-inst tn-cell tn-cell-group tn-child-position-absolute tn-state-active tn-vertical-flipper-box"
+                                    tn-cell-type="group" tn-bind-cell="pages" tn-cell="pages" tn-link="cell.link"
+                                    ng-style="cell.style | optimizeImageType"
+                                    tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)"
+                                    tn-animate-on-self="true" tn-sound="cell.sound"
+                                    ng-class="{ &#39;group-empty&#39;: !(cellGroupItems.length) }"
+                                    opera-tn-ra-cell="box.cubes:0.pages">
+                                    <!-- ngRepeat: chd in cellGroupItems track by $index -->
+                                    <div class="tn-surface tn-page tn-show-page ng-scope tn-comp-anim-pin tn-comp-inst tn-page-inst tn-comp tn-in-cell-state-active tn-comp-mode-flow tn-from-house-reader_booklet-cp on-screen"
+                                        tn-comp-role="page" tn-bind-comp-tpl-id="reader_booklet-cp:sys/pg-fs"
+                                        ng-repeat="chd in cellGroupItems track by $index" tn-comp="chd"
+                                        tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose" tn-uuid=""
+                                        tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)"
+                                        tn-comp-index="0" opera-tn-ra-comp="box.cubes:0.pages:0" style="">
+                                        <!-- ngInclude: compTemplatePath -->
+                                        <section class="tn-comp-pin tn-comp-style-pin ng-scope tn__dark-item__0"
+                                            ng-include="compTemplatePath" tn-link="compAttr.link || comp.link"
+                                            tn-sound="compAttr.sound" ng-style="compAttr.style | optimizeImageType"
+                                            tn-pre-load-image="compAttr.style.backgroundImage"
+                                            style="background-color: rgb(255, 255, 255);"
+                                            data-tn-dark-bgcolor-original="rgb(255,255,255)"
+                                            data-tn-dark-bgcolor="rgb(199,188,176)">
+                                            <div class="tn-layer-slot ng-scope tn-cell-inst tn-cell tn-cell-group tn-child-position-absolute tn-state-active tn__dark-item__1"
+                                                tn-cell-type="group" tn-bind-cell="layers" tn-cell="layers"
+                                                tn-link="cell.link" ng-style="cell.style | optimizeImageType"
+                                                tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)"
+                                                tn-animate-on-self="true" tn-sound="cell.sound"
+                                                ng-class="{ &#39;group-empty&#39;: !(cellGroupItems.length) }"
+                                                opera-tn-ra-cell="box.cubes:0.pages:0.layers"
+                                                data-tn-dark-bgcolor-original="rgb(255,255,255)"
+                                                data-tn-dark-bgcolor="rgb(199,188,176)">
+                                                <!-- ngRepeat: chd in cellGroupItems track by $index -->
+                                                <div class="tn-layer ng-scope tn-comp-anim-pin tn-comp-inst tn-layer-inst tn-comp tn-in-cell-state-active tn-from-house-reader_booklet-cp tn__dark-item__2"
+                                                    tn-comp-role="layer"
+                                                    tn-bind-comp-tpl-id="reader_booklet-cp:sys/ly-fs"
+                                                    ng-repeat="chd in cellGroupItems track by $index" tn-comp="chd"
+                                                    tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose"
+                                                    tn-uuid=""
+                                                    tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)"
+                                                    tn-comp-index="0" opera-tn-ra-comp="box.cubes:0.pages:0.layers:0"
+                                                    data-tn-dark-bgcolor-original="rgb(255,255,255)"
+                                                    data-tn-dark-bgcolor="rgb(199,188,176)" style="">
+                                                    <!-- ngInclude: compTemplatePath -->
+                                                    <section
+                                                        class="tn-comp-pin tn-comp-style-pin ng-scope tn__dark-item__3"
+                                                        ng-include="compTemplatePath"
+                                                        tn-link="compAttr.link || comp.link" tn-sound="compAttr.sound"
+                                                        ng-style="compAttr.style | optimizeImageType"
+                                                        tn-pre-load-image="compAttr.style.backgroundImage"
+                                                        data-tn-dark-bgcolor-original="rgb(255,255,255)"
+                                                        data-tn-dark-bgcolor="rgb(199,188,176)" style="">
+                                                        <div class="tn-comp-slot tn-cell tn-cell-group tn-child-position-absolute tn-state-active ng-scope tn__dark-item__4"
+                                                            tn-cell-type="group" tn-link="cell.link"
+                                                            tn-animate="(!isCellBound ? &#39;__NOT_MOUNT__&#39; : cell.anim)"
+                                                            tn-animate-on-self="true" tn-sound="cell.sound"
+                                                            tn-ra-wrapper-cell=""
+                                                            tn-ra-cell="box.cubes:0.pages:0.layers:0.comps"
+                                                            data-tn-dark-bgcolor-original="rgb(255,255,255)"
+                                                            data-tn-dark-bgcolor="rgb(199,188,176)">
+                                                            <div class="tn-comp-top-level tn-comp-anim-pin tn-comp tn-from-house-paper-cp ng-scope tn__dark-item__5"
+                                                                tn-comp-pose="compConstraint.pose.tplPose || compAttr.pose"
+                                                                tn-uuid=""
+                                                                tn-animate="(!isCompBound ? &#39;__NOT_MOUNT__&#39; : compAttr.anim)"
+                                                                style="position: static;"
+                                                                tn-ra-comp="box.cubes:0.pages:0.layers:0.comps:0"
+                                                                data-tn-dark-bgcolor-original="rgb(255,255,255)"
+                                                                data-tn-dark-bgcolor="rgb(199,188,176)">
+                                                                <div class="main" id="main">
+                                                                    <div class="title-area">
+                                                                        <div class="lt-w" id="toptit">
+                                                                            <div id="dbt" class="t-btn1">大学生心理健康测评</div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div style="display: none;" class="start-area"
+                                                                        id="start">
+                                                                        <div class="auto-div start-auto">
+                                                                            <div class="div-inner">
+                                                                                <div class="circle"></div>
+                                                                                <div class="home-desc" id="home-desc">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="start-btn" onClick="startTest();">
+                                                                            开始测试</div>
+
+                                                                    </div>
+                                                                    <div style="display: block;" id="wenti">
+                                                                        <div id="progress-lable">
+                                                                            <font color="#000">测试进度： <span
+                                                                                    id="pro-label-span">1/10</span>
+                                                                            </font>
+                                                                        </div>
+                                                                        <div class="progress">
+                                                                            <div style="width: 10%; background-color: #4acc85;height: 100%;"
+                                                                                id="precent"></div>
+                                                                        </div>
+                                                                        <font color="#000" size="5px"><strong>
+                                                                                <div class="question-only"
+                                                                                    id="question"><img id="img8"></div>
+                                                                            </strong></font>
+																			<div>测试说明：<br>1、请在心态平和及时间充足的情况下开始答题。<br>2、请注意，题目的答案无对错之分，你不需要考虑哪个答案“应该”更好，而是凭你心里的第一反应做出选择，大约需要用时20-30分钟。</div>
+                                                    </section>
+                                                    <div class="scoreBox">
+                                                        <div class="scoreOuter">
+                                                            <p class="scoreTitle">分数若为50~100健康，100~120较为健康，120~150轻度问题（建议电话咨询或者听听音乐，150~200严重问题（建议去看心理医生）您的分数为:</p>
+															 <p class="score">0</p>
+															 <p>电话咨询：17779982484</p>
+															 <p>或者听听音乐放松一下吧！</p>
+															<audio src="http://music.163.com/song/media/outer/url?id=428203132.mp3" controls="controls"></audio>
+
+                                                           <div style="text-align: center;margin-top: 15px;">
+															<p>欢迎点击进入留言板说出自己的烦恼，也欢迎分享自己解决心理健康问题的过程</p>
+														    <input type="button" id="L_login" value="欢迎进来留言" onclick=javascrtpt:jump1()>
+														  
+														</div>
+                                                        </div>
+														
+                                                    </div>
+													
+                                                    <div id="ti"
+                                                        style="font-size: 16px; text-align: center; color: rgb(0, 0, 0);">
+                                                        <div style="display: none;" id="ti0" class="t-c"><img id="picti"
+                                                                src=""><img id="preload" src=""></div>
+                                                        <div id="selections">
+                                                            <div id="tia" vel="1" num="a." class="t-s"
+                                                                onClick="select(this);">
+                                                                <img id="imga" width="10%">
+                                                            </div>
+                                                            <div id="tib" vel="2" num="b." class="t-s"
+                                                                onClick="select(this);">
+                                                                <img id="imgb" width="10%">
+                                                            </div>
+                                                            <div id="tic" vel="3" num="c." class="t-s"
+                                                                onClick="select(this);">
+                                                                <img id="imgc" width="10%">
+                                                            </div>
+                                                            <div id="tid" vel="4" num="d." class="t-s"
+                                                                 onClick="select(this);">
+                                                                <img id="imgd" width="10%">
+                                                            </div>
+                                                            <div id="tie" vel="4" num="e." class="t-s"
+                                                                onClick="select(this);">
+                                                                <img id="imge" width="10%">
+                                                            </div>
+                                                        </div>
+                                                        <button class="submit">查看分数</button>
+                                                    </div </div>
+
+                                                    <div class="result" id="result">
+                                                        <div class="auto-div">
+                                                            <div class="div-inner">
+                                                                <div class="circle"></div>
+                                                                <div class="result-title" id="result-title"></div>
+                                                                <div id="qrcode"></div>
+                                                                <img id='imgOne' />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                    </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
+    </div>
+    </div>
+    </section>
+    </div>
+    </div>
+    </section>
+    </article>
+    </div>
+	</div>
+</body>
+<script>
+function jump1(){
+           window.location.href="留言板.html";
+        }
+</script>
+<script src="images/common.js"></script>
+<!-- <script type='text/javascript' src="https://www.beiniu2345.com/newlib/jquery.min.js"></script> -->
+<script src="./js/data.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
